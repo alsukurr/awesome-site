@@ -1,0 +1,7 @@
+---
+work_title:  "TAXI WORK"
+work_tag: "2014-2016 work"
+work_url: "http://alsukurr.com/taxi_work"
+work_desc: "Display of various work I have done as a developer over the course of the ride with TAXI."
+work_img: "img/cuteee.jpg"
+---

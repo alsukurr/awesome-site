@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+ <!-- <a href="{{ site.baseurl }}/blog">blog</a> -->
+
+<!-- draggable -->
+<div class="wrapper">
+  <section class="draggable">
+
+     <div class="drag drag_1" draggable="true">
+       <h3 class="message-of-day"></h3>
+     </div>
+     <div class="drag drag_2">
+       <p>Front end developer & designer</p>
+       <!-- <p>Toronto, Canada</p> -->
+       <p>engaging & <span>beautiful</span> user experiences</p>
+       <span class="info">
+         <p>Toronto, Canada</p>
+         <p>tea &#65310; coffee</p>
+         <!-- <p>made of 80% sweet potato</p> -->
+       </span>
+       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit voluptate</p> -->
+     </div>
+     <div class="drag drag_3">;)</div>
+     <h1 class="drag drag_4" id="logo">ALSU KURR </h1>
+
+  </section>
+</div>
+
+<!-- about -->
+ <section class="about"></section>
+
+<!-- work -->
+ <section class="work">
+     <h2 class="section_header">My Work</h2>
+
+     {% for work in site.my_work %}
+
+     <div class="work_item" style="background-image: url({{work.work_img}})">
+        <h3 class="main_item_title">{{work.work_title}}
+        <!-- <i class="fa fa-twitter fa-lg fa-fw"></i> -->
+        </h3>
+
+        <div class="work_item_details">
+          <h4 class="work_title">{{work.work_title}} </h4>
+          <p class="work_desc">{{work.work_desc}}</p>
+          <p class="work_tag">{{work.work_tag}}</p>
+          <a href="{{work.work_url}}" target="_blank" class="work_url">View work <!-- <i class="fa fa-magic" aria-hidden="true"></i> --> <i class="fa fa-2x fa-eye" aria-hidden="true"></i></a>
+        </div>
+     </div>
+
+     {% endfor %}
+
+ </section>
+
+<!--  <section class="blog">
+   <h2 class="section_header">Blog</h2>
+ </section> -->
+
+ <section class="stuff">
+  <h2 class="section_header">Skills & Tools  <i class="fa fa-magic" aria-hidden="true"></i></h2>
+  <div class="wrapper">
+    <ul>
+      <h3>Skills</h3>
+      <li>HTML, CSS, Sass</li>
+      <li>Javascript & Jquery</li>
+      <li>Wordpress & PHP</li>
+      <li>AJAX APIs</li>
+      <li>Jekyll & Liquid</li>
+    </ul>
+    <ul>
+      <h3>Tools</h3>
+      <li>Grunt & Gulp</li>
+      <li>Git & Github</li>
+      <li>Sketch & Illustrator</li>
+      <li>Sublime Text</li>
+      <li>Russian</li>
+    </ul>
+    <ul>
+       <h3>Currently learning</h3>
+      <li>React</li>
+      <li>Spanish</li>
+    </ul>
+
+    <!-- <p>skills, tools, learning</p> -->
+  </div>
+ </section>
+
+<section class="contact">
+  <h2 class="section_header">Contact</h2>
+  <div class="wrapper">
+    <a href="mailto:k.alsu@me.com?Subject=Just%20saying%20hi&body=Hi%20Alsu,%20my%20name%20is%20...%20and%20here%20is%20me%20writing%20to%20you..." class="contact_me">k.alsu@me.com</a>
+    <!-- <a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here">Email Us</a> -->
+
+  </div>
+
+</section>
+

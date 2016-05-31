@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+
+<div class="wrapper">
+<ul class="taxi_work">
+  {% for work in site.taxi_work_collection %}
+
+<!--   <div class="work_item" style="background-image: url({{work.work_img}})"> -->
+  <li>
+         <h3 class="main_item_title">{{work.work_title_taxi}}
+         <!-- <i class="fa fa-twitter fa-lg fa-fw"></i> -->
+         </h3>
+           <!-- <h4 class="work_title">{{work.work_title_taxi}} </h4> -->
+           <p class="work_desc_taxi">{{work.work_desc_taxi}}</p>
+           <p class="work_tag_taxi">{{work.work_tag}}</p>
+           <a href="{{work.work_url_taxi}}" target="_blank" class="work_url">{{work.work_url_title_taxi}}</a>
+           <img class="work_img_taxi" src="{{work.work_img_taxi}}" alt="">
+  </li>
+<!--   </div> -->
+
+  {% endfor %}
+  </ul>
+</div>

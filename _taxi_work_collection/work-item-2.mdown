@@ -1,0 +1,8 @@
+---
+work_title_taxi: "KPMG International Annual Review"
+work_url_title_taxi: "View Work"
+work_url_taxi: "https://home.kpmg.com/xx/en/home/about/international-annual-review-2015.html"
+work_desc_taxi: "Was a part of a team that developed the 2015 KPMG International Annual Review using HTML5, CSS/Sass and JavaScript/jQuery."
+work_img_taxi: "/img/kpmg_page.png"
+
+---

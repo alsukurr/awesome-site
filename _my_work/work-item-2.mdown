@@ -1,0 +1,7 @@
+---
+work_title:  "JQuery recipe box"
+work_tag: "CSS3, HTML5, JavaScript, jQuery"
+work_url: "http://alsukurr.com/recipe_box"
+work_desc: "A jQuery gallery designed to be easily adapted for a food blog or website. It incorporates a jQuery lightbox, dynamically updating content and imagery. Working on this project was particularly fun as it was part of pair coding experiment."
+work_img: "img/cuteee.jpg"
+---

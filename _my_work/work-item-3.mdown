@@ -1,0 +1,7 @@
+---
+work_title:  "Nomadic Socialite"
+work_tag: "Wordpress, Sass, JavaScript, jQuery"
+work_url: "http://nomadicsocialite.com"
+work_desc: "Fashion, travel and entertaiment blog design and development. The site is built on a custom Wordpress theme with custom post types and fields. "
+work_img: "img/cuteee.jpg"
+---
