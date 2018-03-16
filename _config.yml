@@ -20,13 +20,14 @@ markdown: kramdown
 subtitle-quote: "It is not that I'm so smart. But I stay with the questions much longer."
 subtitle-author: "Albert Einstein"
 
-gems: [jekyll-paginate]
-paginate: 2 # number of posts you want per page
-paginate_path: "/blog/page/:num"
+# gems: [jekyll-paginate]
+# paginate: 2 # number of posts you want per page
+# paginate_path: "/blog/page/:num"
 
 collections:
   - my_work
   - taxi_work_collection
+  - mirum_work_collection
 
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]

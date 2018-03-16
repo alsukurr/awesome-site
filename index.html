@@ -12,28 +12,37 @@ layout: default
        <h3 class="message-of-day"></h3>
      </div>
      <div class="drag drag_2">
-       <p>Front end developer & designer</p>
+       <p>Front end developer &#38; designer</p>
        <!-- <p>Toronto, Canada</p> -->
-       <p>engaging & <span>beautiful</span> user experiences</p>
+       <p>engaging &#38; <span>beautiful</span> user experiences</p>
        <span class="info">
-         <p>Toronto, Canada</p>
+         <p>Montreal, Canada</p>
          <p>tea &#65310; coffee</p>
          <!-- <p>made of 80% sweet potato</p> -->
        </span>
        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit voluptate</p> -->
      </div>
-     <div class="drag drag_3">;)</div>
+     <!-- <div class="drag drag_3"></div> -->
      <h1 class="drag drag_4" id="logo">ALSU KURR </h1>
 
   </section>
 </div>
 
 <!-- about -->
- <section class="about"></section>
+  <section class="about">
+   <h2 class="section_header">About Me</h2>
+   <div class="wrapper">
+      <p>I love to solve problems and advocate ideas using the power of code &#38; design.  I fell in love with coding during a <a href="http://ladieslearningcode.com/" target="_blank">Ladies Learning Code</a> workshop, because I realized I could bring any design idea to life and that was so impactful.</p> 
+      <p><span>Learning by doing:</span> I am keeping myself busy working on a couple different projects, and currenly I am staying focused on improving my ReactJS and Vue.JS chops.
+      <p>Outside of a browser window, I give back by 🌟&nbsp;igniting🌟 other creative minds as a mentor for LLC, get my vitamin D by 🏃🏻&nbsp;running🏃🏻, explore the world by learning 👋🏻&nbsp;French👋🏻  and fulfill my fashion designer dream by 👗&nbsp;DIYing👗  a big chunk of my wardrobe.  I’m inspired by the idea of creating things that prioritize functionality and beauty, and this is how I approach every project. </p>
+      <p>Let’s build together!</p>
+   </div>
+
+ </section>
 
 <!-- work -->
  <section class="work">
-     <h2 class="section_header">My Work</h2>
+     <h2 class="section_header">Selected Work</h2>
 
      {% for work in site.my_work %}
 
@@ -46,41 +55,62 @@ layout: default
           <h4 class="work_title">{{work.work_title}} </h4>
           <p class="work_desc">{{work.work_desc}}</p>
           <p class="work_tag">{{work.work_tag}}</p>
-          <a href="{{work.work_url}}" target="_blank" class="work_url">View work <!-- <i class="fa fa-magic" aria-hidden="true"></i> --> <i class="fa fa-2x fa-eye" aria-hidden="true"></i></a>
+          <div class="work_url_container">
+            <a href="{{work.work_url}}" target="_blank" class="work_url">View work</a>
+              <!-- <img class="x-img service-icon x-img-none" src="img/eye.svg"> -->
+            <svg viewBox="0 0 259 156.25" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
+              
+            </defs><g><path class="fil0" d="M0 65c89,-86 169,-87 259,0 -90,81 -170,80 -259,0zm176 -42c19,23 19,57 -1,80 21,-8 42,-21 63,-39 -21,-19 -41,-32 -62,-41zm-92 80c-20,-23 -20,-57 -1,-80 -21,9 -42,22 -62,41 21,18 42,31 63,39zm78 -73c-29,-30 -79,-9 -79,33 0,41 50,62 79,33 19,-19 19,-48 0,-66z"/><path class="fil1" d="M129 30c-18,0 -32,15 -32,33 0,18 14,32 32,32 22,0 38,-21 32,-41 -6,16 -30,12 -30,-5 0,-8 5,-14 13,-16 -5,-2 -9,-3 -15,-3z"/></g>
+            </svg>
+          </div>
+          
         </div>
+     </div>
+
+     <div class="work_item_mobile">
+       <div class="work_item_details">
+         <h4 class="work_title">{{work.work_title}} </h4>
+         <p class="work_desc">{{work.work_desc}}</p>
+         <p class="work_tag">{{work.work_tag}}</p>
+         <div class="work_url_container">
+           <a href="{{work.work_url}}" target="_blank" class="work_url">View work</a>
+             <!-- <img class="x-img service-icon x-img-none" src="img/eye.svg"> -->
+           <svg viewBox="0 0 259 156.25" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
+             
+           </defs><g><path class="fil0" d="M0 65c89,-86 169,-87 259,0 -90,81 -170,80 -259,0zm176 -42c19,23 19,57 -1,80 21,-8 42,-21 63,-39 -21,-19 -41,-32 -62,-41zm-92 80c-20,-23 -20,-57 -1,-80 -21,9 -42,22 -62,41 21,18 42,31 63,39zm78 -73c-29,-30 -79,-9 -79,33 0,41 50,62 79,33 19,-19 19,-48 0,-66z"/><path class="fil1" d="M129 30c-18,0 -32,15 -32,33 0,18 14,32 32,32 22,0 38,-21 32,-41 -6,16 -30,12 -30,-5 0,-8 5,-14 13,-16 -5,-2 -9,-3 -15,-3z"/></g>
+           </svg>
+         </div>
+       </div>
      </div>
 
      {% endfor %}
 
  </section>
 
-<!--  <section class="blog">
-   <h2 class="section_header">Blog</h2>
- </section> -->
-
  <section class="stuff">
-  <h2 class="section_header">Skills & Tools  <i class="fa fa-magic" aria-hidden="true"></i></h2>
+  <h2 class="section_header">Skills &#38; Tools  <!-- <i class="fa fa-magic" aria-hidden="true"></i> --></h2>
   <div class="wrapper">
     <ul>
       <h3>Skills</h3>
       <li>HTML, CSS, Sass</li>
-      <li>Javascript & Jquery</li>
-      <li>Wordpress & PHP</li>
+      <li>Javascript &#38; Jquery</li>
+      <li>ReactJS</li>
+      <li>Wordpress &#38; PHP</li>
       <li>AJAX APIs</li>
-      <li>Jekyll & Liquid</li>
+      <li>Jekyll &#38; Liquid</li>
     </ul>
     <ul>
       <h3>Tools</h3>
-      <li>Grunt & Gulp</li>
-      <li>Git & Github</li>
-      <li>Sketch & Illustrator</li>
+      <li>Grunt &#38; Gulp</li>
+      <li>Git &#38; Github</li>
+      <li>Sketch &#38; Illustrator</li>
       <li>Sublime Text</li>
       <li>Russian</li>
     </ul>
     <ul>
-       <h3>Currently learning</h3>
-      <li>React</li>
-      <li>Spanish</li>
+      <h3>Currently learning</h3>
+      <li>Vue.JS</li>
+      <li>French (halp me!)</li>
     </ul>
 
     <!-- <p>skills, tools, learning</p> -->

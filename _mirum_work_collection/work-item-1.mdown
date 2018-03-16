@@ -1,0 +1,8 @@
+---
+work_title_mirum: "Dairy Farmers of Canada"
+work_url_title_mirum: "View Work"
+work_url_mirum: "http://www.dairygoodness.ca/milk-in-school/new-brunswick-nova-scotia"
+work_desc_mirum: "Was a part of a team that developed a site for Dairy Farmers of Canada's School Milk Program."
+work_img_mirum: "/img/milk.jpg"
+
+---

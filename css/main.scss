@@ -4,8 +4,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700,900");
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(http://fonts.googleapis.com/css?family=Vidaloka|Yeseva+One|Abril+Fatface);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700);
+@import url('http://fonts.googleapis.com/css?family=Vidaloka|Yeseva+One|Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $title-font-family: "Lato", Helvetica, Arial, sans-serif;
 
@@ -18,7 +19,7 @@ $title-font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 // Our variables
-$base-font-family: "Lato", Helvetica, Arial, sans-serif;
+$base-font-family: "Poppins", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -26,6 +27,7 @@ $base-line-height: 1.5;
 $logo-font-family: "HipstelveticaBold";
 $base-header-font-family: "Yeseva One";
 $message-font-family: "Josefin Sans";
+$link-font-family: "Lato";
 // $base-header-font-family: "Abril Fatface";
 
 $spacing-unit:     30px;

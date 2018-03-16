@@ -104,7 +104,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass']);
-    gulp.watch(['*.html','js/*.js', '_layouts/*.html', '_includes/*.html', '_posts/*', '_my_work/*', 'blog/*.html', 'taxi_work/*.html', 'fonts/*', '_config.yml', '_images/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html','js/*.js', '_layouts/*.html', '_includes/*.html', '_posts/*', '_my_work/*', 'blog/*.html', 'taxi_work/*.html','mirum_work/*.html', 'fonts/*', '_config.yml', '_images/*'], ['jekyll-rebuild']);
 });
 
 /**

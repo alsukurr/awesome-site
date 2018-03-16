@@ -1,7 +1,7 @@
 ---
-work_title:  "Nomadic Socialite"
-work_tag: "Wordpress, Sass, JavaScript, jQuery"
-work_url: "http://nomadicsocialite.com"
-work_desc: "Fashion, travel and entertaiment blog design and development. The site is built on a custom Wordpress theme with custom post types and fields. "
+work_title:  "Lala My Day"
+work_tag: "HTML, Sass, API, JavaScript, jQuery"
+work_url: "http://alsukurr.com/lala"
+work_desc: "A web app to find that perfect lyric for your tweet or instagram caption. Built with Musixmatch API"
 work_img: "img/cuteee.jpg"
 ---

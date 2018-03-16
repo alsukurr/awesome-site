@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $title-font-family;
   font-weight: 900;
 }
+
+p span {
+  font-style: italic;
+}
 .frame {
   border: 5px solid $pink-bright;
   // border-top: 10px solid $pink-bright;
@@ -31,7 +35,7 @@ section {
 section.draggable {
   position: relative;
   height: 52em;
-  height: 65vh;
+  height: 75vh;
   width: 80%;
   left: 50%;
   transform: translateX(-50%);
@@ -43,18 +47,18 @@ section.draggable {
   }
   @include media-query($on-mobile) {
     width: 100%;
-    height: 108vh;
+    height: 90vh;
   }
 
   div {
     width: 200px;
     position: absolute;
     &:nth-of-type(1) {
-      top: 26em;
+      top: 30em;
       // font-size: 1.1em;
       padding: 2em;
       width: 16em;
-      right: 70%;
+      left: 60%;
       background: $mint-pale;
       z-index: 3;
       h3 {
@@ -216,7 +220,42 @@ h2.section_header {
   }
 }
 
+// LINK STYLE
+p a {
+  color: $pink-bright;
+
+  &:hover {
+    color: $mint;
+    transition: all 0.4s ease;
+    text-decoration: none;
+  }
+  &:visited, &:focus {
+    color: $pink-bright;
+  }
+  &:visited:hover,
+  &:focus:hover {
+    color: $mint;
+  }
+}
+
 // WORK FRONT PAGE
+.work_item_mobile {
+    display: none;
+    .work_item_details {
+      position: static !important;
+    }
+  @include media-query($on-mobile) {
+    display: block;
+    .work_item_details {
+      position: static;
+      padding: 20px;
+      border: 6px solid $mint-pale;
+      border-top: 8px solid $mint-pale;
+      border-bottom: 8px solid $mint-pale;
+      margin-bottom: 20px;
+    }
+  }
+}
 section.work {
   .work_item {
     background-size: cover;
@@ -231,19 +270,29 @@ section.work {
     background-color: $pink-bright;
     background-color: $cream;
     background-color: $pink-pale;
+    background-color: #FFF;
+    border: 4px solid $mint-pale;
     text-align: center;
+    transition: all 0.4s ease;
     // background-color: $mint-pale;
     @include media-query($on-laptop) {
       margin-bottom: 60px;
     }
     @include media-query($on-mobile) {
-      height: 250px;
+      display: none;
+      // height: 100%;
+      position: static;
       margin-bottom: 90px;
       height: 150px;
       margin-bottom: 200px;
+      .work_item_details {
+        // height: 100%;
+        position: static;
+      }
     }
     &:hover {
-      // background-color: lighten($pink-bright, 8%);
+      // background-color: lighten($pink-bright, 4%);
+      background-color: $mint-pale;
       .work_item_details {
         opacity: 1;
       }
@@ -274,19 +323,25 @@ section.work {
   }
   .work_item_details {
     text-align: left;
+    text-align: center;
     opacity: 0;
     position: absolute;
-    top: 10%;
-    left: 2%;
+    top: 0%;
+    left: 0%;
     background-color: $mint;
     background-color: $pink-pale;
-    border: 8px solid $mint-pale;
-    background-color: #FFF;
-    background-color: $cream;
+    border: 4px solid $pink-bright;
+    border: 4px solid $mint-pale;
+    border-top: none;
+
+    // background-color: #FFF;
+    // background-color: $cream;
+    background-color: $pink-pale;
     padding: 10px 20px;
-    width: 98%;
-    // height: 100%;
-    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 108%;
+    // overflow: auto;
+    transition: all 0.4s ease;
     z-index: 999;
     // display: none;
 
@@ -298,6 +353,7 @@ section.work {
       font-size: 30px;
       color: $grey-dark;
       color: $pink-bright;
+      color: $grey-color-dark;
       margin-bottom: 5px;
       // color: $mint;
       text-transform: uppercase;
@@ -316,26 +372,46 @@ section.work {
         content: "/ ";
       }
     }
-    a.work_url {
-      font-size: 12px;
-      color: $grey-dark;
-      text-transform: uppercase;
-      padding: 10px;
-      // color: $grey-color;
-      text-decoration: none;
-      i {
-        vertical-align: top;
-        margin-left: 10px;
-      }
+    .work_url_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       &:hover {
+        cursor: pointer;
+      }
+      &:hover .fil1 {
+        fill: $mint;
+      }
+      &:hover a {
         // background-color: lighten($grey-color-dark, 80%);
         color: $grey-color-dark;
-        i {
-        color: $mint;
-        // -webkit-text-stroke-width: 0.4px;
-        // -webkit-text-stroke-color: #000;
-        }
       }
+
+      a.work_url {
+        font-family: $link-font-family;
+        font-size: 12px;
+        font-weight: bold;
+        color: $grey-dark;
+        text-transform: uppercase;
+        // padding: 10px;
+        // color: $grey-color;
+        text-decoration: none;
+      }
+
+      svg {
+        width: 40px;
+        height: 20px;
+        transition: all 0.4s ease;
+      }
+         
+      .fil1 {
+        fill:black;
+        transition: all 0.4s ease;
+        stroke: #000;
+        stroke-width: 8;
+      }
+      .fil0 {fill:black;fill-rule:nonzero}
     }
   }
 }
@@ -391,27 +467,48 @@ section.contact {
     height: 100%;
   a {
     text-align: center;
-    border: $mint-pale solid 8px;
+    // border: $mint-pale solid 8px;
     padding: 1em;
     font-size: 20px;
+    font-family: $link-font-family;
+    font-weight: bold;
     text-transform: uppercase;
     color: $pink-bright;
     // color: $grey-color-dark;
     // font-weight: bold;
     margin: 1em;
     transition: 0.2s all ease-in-out;
+    position: relative;
+    &::after {
+      content: '';
+          position: relative;
+          display: inline-block;
+          // vertical-align: middle;
+          margin-left: 5px;
+          width: 28px;
+          height: 27px;
+          // border: 1px #000 solid;
+          transition: transform .2s cubic-bezier(.17, .67, .46, .97);
+          // transition: 0.2s all ease-in-out;
+          background: url(../img/contact.png) no-repeat top;
+          background-size: 100% auto;
+    }
     @include media-query($on-mobile) {
       font-size: 14px;
     }
     &:hover {
-      background-color: $pink-bright;
-      background-color: $cream;
-      color: $background-color;
-      color: $pink-bright;
+      // background-color: $pink-bright;
+      // background-color: $cream;
+      // color: $background-color;
+      // color: $pink-bright;
       color: $grey-dark;
-      border: $pink-bright solid 8px;
+      // border: $pink-bright solid 8px;
       // border: none;
       text-decoration: none;
+      &::after {
+        background-position: bottom;
+        transform: translate(18%, -20%);
+      }
 
     }
 
@@ -450,15 +547,21 @@ section.contact {
   img {
     width: 100%;
   }
+  // LINK STYLE
   a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $grey-color-dark;
-    font-weight: bold;
-    margin: 10px 0;
-    display: inline-block;
+    color: $pink-bright;
+
     &:hover {
+      color: $mint;
+      transition: all 0.4s ease;
+      text-decoration: none;
+    }
+    &:visited, &:focus {
       color: $pink-bright;
+    }
+    &:visited:hover,
+    &:focus:hover {
+      color: $mint;
     }
   }
 

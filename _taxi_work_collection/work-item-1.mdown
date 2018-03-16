@@ -1,6 +1,6 @@
 ---
 work_title_taxi: "Tshirts to Paradise"
 work_desc_taxi: "A promotion website for Vancouver Airport. Front-end development using HTML5, CSS/Sass and JavaScript/jQuery. The responsive site utilizes a dynamic slider for desktop and Handlebars.js for templating from a JSON file."
-work_img_taxi: "/img/tshirts.jpg"
+work_img_taxi: "/img/tshirts2.jpg"
 
 ---
